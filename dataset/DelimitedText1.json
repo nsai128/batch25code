@@ -1,0 +1,47 @@
+{
+	"name": "DelimitedText1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "inputcontianer"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "CUST_ID",
+				"type": "String"
+			},
+			{
+				"name": "CUST_FIRST_NAME",
+				"type": "String"
+			},
+			{
+				"name": "MGR",
+				"type": "String"
+			},
+			{
+				"name": "CUST_GENDER",
+				"type": "String"
+			},
+			{
+				"name": "JOING YR",
+				"type": "String"
+			},
+			{
+				"name": "SALARY",
+				"type": "String"
+			}
+		]
+	}
+}
